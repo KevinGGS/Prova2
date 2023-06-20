@@ -29,9 +29,9 @@ $row = mysqli_fetch_array($result);
         </div>
     <div class="form-group row">
     <label for="tipo" class="col-sm-2 col-form-label">Tipo:</label>
-        <input type="radio" id="tipo" name="tipo" for="tipo" value="Entrada">
+        <input type="radio" id="tipo" name="tipo" for="tipo" value="Entrada" <?php if($row['tipo']=='Entrada'){echo "checked";} ?>>
         <label class="col-sm-2 col-form-label">Entrada</label><br>
-        <input type="radio" id="tipo" name="tipo" for="tipo" value="Saida">
+        <input type="radio" id="tipo" name="tipo" for="tipo" value="Saida" <?php if($row['tipo']=='Saida'){echo "checked";} ?>>
         <label class="col-sm-2 col-form-label">Saída</label><br>
     </div>
     <div class="form-group row">
@@ -49,8 +49,8 @@ $row = mysqli_fetch_array($result);
     <div class="form-group row">
     <label for="cheque">Cheque:</label>
         <select name="cheque" for="cheque">
-            <option for="cheque" value="Sim">Sim</option>
-            <option for="cheque" value="Não">Não</option>
+            <option for="cheque" value="Sim" <?php if($row['cheque']=='Sim'){echo "selected";}?>>Sim</option>
+            <option for="cheque" value="Não" <?php if($row['cheque']=='Não'){echo "selected";}?>>Não</option>
         </select>
     </div>  
    </div>
