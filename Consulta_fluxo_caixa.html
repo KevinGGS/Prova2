@@ -9,19 +9,22 @@
 </head>
 <body>
     <h1>Consulta caixa</h1>
-    <form action="Consulta_fluxo_caixa_exe.php" method="POST" enctype="multipart/form-data">
+    <form action="Consulta_fluxo_caixa.php" method="POST" enctype="multipart/form-data">
     <div class="form-group row">
-    <label for="tipos" class="col-sm-2 col-form-label">Tipo de consulta:</label>
-        <input type="radio" id="tipos" name="tipos" for="tipos" value="saldo">
+    <label for="tipo" class="col-sm-2 col-form-label">Tipo de consulta:</label>
+        <input type="radio" id="tipo" name="tipo" for="tipo" value="saldo">
         <label class="col-sm-2 col-form-label">Saldo Total</label><br>
-        <input type="radio" id="tipos" name="tipos" for="tipos" value="saida">
+        <input type="radio" id="tipo" name="tipo" for="tipo" value="saida">
         <label class="col-sm-2 col-form-label">Total Saidas</label><br>
-        <input type="radio" id="tipos" name="tipos" for="tipos" value="entrada">
+        <input type="radio" id="tipo" name="tipo" for="tipo" value="entrada">
         <label class="col-sm-2 col-form-label">Total Entradas</label><br>
         <div class="form-group row">
-            <br><input class="btn btn-outline-secondary" type="submit" value="Enviar">
+        <br><input class="btn btn-outline-secondary" type="submit" value="Enviar">
         </div>
     </div>
     </form>
+    <div>
+        <a class="btn btn-outline-secondary" href="index.php">voltar</a>
+    </div>
 </body>
 </html>
